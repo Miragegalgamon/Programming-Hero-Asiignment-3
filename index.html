@@ -38,7 +38,8 @@
                                     <a class="nav-link" href="#register">Register</a>
                                 </li>
                                 <li class="nav-item nav-button d-none d-md-block">
-                                    <a href="#" class="btn btn-register rounded-3 fw-semibold">Register</a>
+                                    <Register href="#" class="btn btn-register rounded-2 fw-semibold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Register</a>
                                 </li>
                             </ul>
                 </div>
@@ -90,7 +91,7 @@
          <!-- top Carosel here -->
    </header>
    <main>
-       <div class="container">
+       <div class="container" id="course">
            <div class="section-heading text-center mt-5 mb-2 py-5 ">
                <h1 class=" fw-bold">Our Top Courses</h1>
                <p class=" mx-auto ">Explore our best selling courses. You can enroll with 20% discount on these</p>
@@ -295,8 +296,197 @@
            <div class="card-button text-center my-2">
                <button class="btn btn-danger">View More</button>
            </div>
-
+<!-- registrasion Section -->
+           <section id="register" class="section-space my-5">
+               <div class="container bg-danger rounded-2">
+                   <div class="row align-items-center py-3 p-md-5">
+                       <div class="col-12 col-lg-5 text-center text-lg-start text-white">
+                           <h2 class="">Ready to join?</h2>
+                           <p class="text-justify">The key to pursuing excellence is to embrace an organic, long-term
+                               learning process, and not to live in a shell of static, safe mediocrity.Get 20% Flat
+                               Discunts on all courses</p>
+                       </div>
+                       <div class="col-12 col-lg-4"></div>
+                       <div class="col-12 col-lg-3 text-center">
+                           <a href="#" class="btn btn-light btn-lg rounded-1 text-blue fw-semibold" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Register Now</a>
+                       </div>
+                   </div>
+               </div>
+               <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hey You come here!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hi Do you want some couses for free then go to our website and register.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/c/ProgrammingHero"></a>Go to course</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- registrasion Section -->
+     <!-- accordian section -->
+     <section id="accordian" class="section-space d-none d-lg-block ">
+       <div class="hidden">
+        <div class="container ">
+            <div class="section-heading text-center mt-5 m-2 py-5 visible-lg">
+                <h1 class=" fw-bold">Frequently Asked Question</h1>
+                <p class=" mx-auto d-block d-md-none mt-2">Here is some common Questions. I hope you will find the
+                    answer.</p>
+                <p class=" w-75  mx-auto d-none d-md-block mt-2">Here is some common Questions. I hope you will find
+                    the
+                    answer.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-2"></div>
+                <div class="col-12 col-lg-8">
+                    <div class="accordion  mx-auto mb-5" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. What is the difference beetween Flexbox and Grid
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Flexbox and Grid</strong> both are the Css layout. We can use use these
+                                    layout for
+                                    formatting elements inside the layout . <br> <br>
+                                    <strong>Flexbox</strong> is a one dimensional layout . 
+                                    But the <strong>CSS Grid</strong> is a two dimensional layout . 
  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item visible-lg">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    2. What is the difference beetween Bootstrap and Tailwind?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong> Bootstrap and Tailwind</strong> are both CSS Framework comes with
+                                    thousands of Class to design a responsive website without using any extra CSS.
+                                    <br> <br>
+                                    Bootstrap is a 12 grid system based CSS framework which focus on responsiveness
+                                    where as Tailwind is utility based CSS framework which focuses mainly  on utilities.
+                                    Tailwind is much more flexible to design,Bootstrap much more flexible to make
+                                    Website responsive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    3. What is CSS Box model?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>The CSS box model</strong> is essentially a box that wraps around every
+                                    HTML element. It consists of: margins, borders, padding, and the actual content.
+ 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed fw-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                                    aria-controls="collapsefour">
+                                    4. What is a semantic tag?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Semantic Tags are block level elements which actually defines the meaning of the
+                                    webpage in HTML. It is used by search engines for optimization purposes.
+                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2"></div>
+            </div>
+ 
+ 
+        </div>
+ 
+    </section>
+    <!-- accordian section End  -->
+ 
+    <!-- brands section-->
+    <section id="about" class="section-space d-none d-lg-block">
+        <div class="container-fluid">
+            <div class="section-heading text-center mt-5 mb-2 py-5 ">
+                <h1 class=" fw-bold">Trusted by over 800+ companies</h1>
+            </div>
+            <div class="row brand-box px-1 gap-3 pb-5 align-items-center">
+                <div class="col text-center"><img src="images/company/company-1.png" alt=""></div>
+                <div class="col text-center"><img src="images/company/company-2.png" alt=""></div>
+                <div class="col text-center"><img src="images/company/company-3.png" alt=""></div>
+                <div class="col text-center"><img src="images/company/company-4.png" alt=""></div>
+                <div class="col text-center"><img src="images/company/company-5.png" alt=""></div>
+                <div class="col text-center"><img src="images/company/company-6.png" alt=""></div>
+ 
+ 
+            </div>
+       </div>
+
+
+   </section>
+   <!-- brands section -->
+
+</main>
+
+
+<footer class="mt-4 bg-black">
+   <div class="container bg-black text-white text-center mt-5">
+       <img src="images/logo.png" alt="" class="nav-logo mt-3">
+       <h2 class="mt-2 pb-5">Kon Fresh Courses</h2>
+       <p>15 Shinjuku, Shinjuku City, Tokyo 160-0022, Japan</p>
+       <div class="link mt-5">
+           <a href="#" class="text-decoration-none  text-white me-3">Privacy Policy</a> | <a href=""
+               class="text-decoration-none  text-light ms-3">Terms and
+               policy</a>
+       </div>
+       <hr>
+
+       <div class="social pb-5 ">
+
+           <a href="https://twitter.com/" class="text-decoration-none ">
+               <img src="images/icons/twitter.png" alt="">
+           </a>
+           <a href="https://facebook.com/" class="text-decoration-none mx-3">
+               <img src="images/icons/fb.png" alt="" class="mx-3">
+           </a>
+           <a href="https://linkedin.com/" class="text-decoration-none">
+               <img src="images/icons/linkedin.png" alt="">
+           </a>
+
+       </div>
+
+   </div>
+
+</footer>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
