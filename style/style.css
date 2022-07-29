@@ -1,0 +1,21 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family:  'Poppins', sans-serif;
+}
+
+.nav-logo{
+    width: 69px;
+}
+.btn-register{
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+.carousel-caption{
+    top:40%;
+    bottom: auto;
+}
+.carousel-caption h1{
+    font-size: 3vw;
+}
